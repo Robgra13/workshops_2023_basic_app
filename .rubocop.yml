@@ -1,0 +1,37 @@
+RSpec/ExampleLength:
+  Exclude:
+    - 'spec/features/**/*'
+
+RSpec/AnyInstance:
+  Enabled: false
+
+require:
+  - rubocop-gitlab-security
+  - rubocop-performance
+  - rubocop-rake
+  - rubocop-rspec
+  - rubocop-rails
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.2.1
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'config.ru'
+    - 'bin/**/*'
+
+Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+RSpec/NestedGroups:
+  Max: 4
+
+Metrics/AbcSize:
+  CountRepeatedAttributes: false
+
+Rails/I18nLocaleTexts:
+  Enabled: false
